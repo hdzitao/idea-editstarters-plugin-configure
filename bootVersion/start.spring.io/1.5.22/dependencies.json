@@ -1,5 +1,5 @@
 {
-  "bootVersion": "1.5.0",
+  "bootVersion": "1.5.22",
   "dependencies": {
     "data-neo4j": {
       "groupId": "org.springframework.boot",
@@ -92,6 +92,12 @@
       "scope": "compile",
       "bom": "spring-cloud"
     },
+    "azure-support": {
+      "groupId": "com.microsoft.azure",
+      "artifactId": "azure-spring-boot-starter",
+      "scope": "compile",
+      "bom": "azure"
+    },
     "web-services": {
       "groupId": "org.springframework.boot",
       "artifactId": "spring-boot-starter-web-services",
@@ -135,6 +141,12 @@
       "groupId": "org.flywaydb",
       "artifactId": "flyway-core",
       "scope": "compile"
+    },
+    "codecentric-spring-boot-admin-client": {
+      "groupId": "de.codecentric",
+      "artifactId": "spring-boot-admin-starter-client",
+      "scope": "compile",
+      "bom": "codecentric-spring-boot-admin"
     },
     "batch": {
       "groupId": "org.springframework.boot",
@@ -190,6 +202,12 @@
       "artifactId": "spring-boot-starter-data-solr",
       "scope": "compile"
     },
+    "cloud-starter-vault-config": {
+      "groupId": "org.springframework.cloud",
+      "artifactId": "spring-cloud-starter-vault-config",
+      "scope": "compile",
+      "bom": "spring-cloud"
+    },
     "kafka": {
       "groupId": "org.springframework.kafka",
       "artifactId": "spring-kafka",
@@ -201,6 +219,12 @@
       "scope": "compile",
       "bom": "spring-cloud-services"
     },
+    "azure-active-directory": {
+      "groupId": "com.microsoft.azure",
+      "artifactId": "azure-active-directory-spring-boot-starter",
+      "scope": "compile",
+      "bom": "azure"
+    },
     "integration": {
       "groupId": "org.springframework.boot",
       "artifactId": "spring-boot-starter-integration",
@@ -211,6 +235,12 @@
       "artifactId": "spring-cloud-services-starter-config-client",
       "scope": "compile",
       "bom": "spring-cloud-services"
+    },
+    "codecentric-spring-boot-admin-server": {
+      "groupId": "de.codecentric",
+      "artifactId": "spring-boot-admin-starter-server",
+      "scope": "compile",
+      "bom": "codecentric-spring-boot-admin"
     },
     "cloud-security": {
       "groupId": "org.springframework.cloud",
@@ -282,6 +312,12 @@
       "artifactId": "spring-cloud-starter-netflix-turbine-stream",
       "scope": "compile",
       "bom": "spring-cloud"
+    },
+    "azure-keyvault-secrets": {
+      "groupId": "com.microsoft.azure",
+      "artifactId": "azure-keyvault-secrets-spring-boot-starter",
+      "scope": "compile",
+      "bom": "azure"
     },
     "mustache": {
       "groupId": "org.springframework.boot",
@@ -450,6 +486,12 @@
       "scope": "compile",
       "bom": "spring-cloud"
     },
+    "azure-storage": {
+      "groupId": "com.microsoft.azure",
+      "artifactId": "azure-storage-spring-boot-starter",
+      "scope": "compile",
+      "bom": "azure"
+    },
     "cloud-eureka-server": {
       "groupId": "org.springframework.cloud",
       "artifactId": "spring-cloud-starter-netflix-eureka-server",
@@ -476,6 +518,12 @@
   },
   "repositories": {},
   "boms": {
+    "codecentric-spring-boot-admin": {
+      "groupId": "de.codecentric",
+      "artifactId": "spring-boot-admin-dependencies",
+      "version": "1.5.7",
+      "repositories": []
+    },
     "spring-cloud": {
       "groupId": "org.springframework.cloud",
       "artifactId": "spring-cloud-dependencies",
@@ -492,6 +540,12 @@
       "groupId": "io.pivotal.spring.cloud",
       "artifactId": "spring-cloud-services-dependencies",
       "version": "1.6.6.RELEASE",
+      "repositories": []
+    },
+    "azure": {
+      "groupId": "com.microsoft.azure",
+      "artifactId": "azure-spring-boot-bom",
+      "version": "0.2.4",
       "repositories": []
     }
   }

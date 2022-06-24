@@ -48,5 +48,10 @@
     "versionRange": "2.0.0",
     "metadata": "2.0.0",
     "dependencies": "2.0.0"
+  },
+  {
+    "versionRange": "[1.5.0,1.5.x]",
+    "metadata": "1.5.22",
+    "dependencies": "1.5.22"
   }
 ]
