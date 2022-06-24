@@ -1,5 +1,5 @@
 {
-  "bootVersion": "2.2.7",
+  "bootVersion": "2.2.8",
   "dependencies": {
     "actuator": {
       "groupId": "org.springframework.boot",
@@ -303,7 +303,7 @@
       "bom": "spring-cloud"
     },
     "oracle": {
-      "groupId": "com.oracle.ojdbc",
+      "groupId": "com.oracle.database.jdbc",
       "artifactId": "ojdbc8",
       "scope": "runtime"
     },
