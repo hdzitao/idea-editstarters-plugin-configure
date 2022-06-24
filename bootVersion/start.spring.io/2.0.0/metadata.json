@@ -1664,43 +1664,15 @@
   },
   "bootVersion": {
     "type": "single-select",
-    "default": "2.7.0.RELEASE",
+    "default": "2.1.1.RELEASE",
     "values": [
       {
-        "id": "3.0.0.BUILD-SNAPSHOT",
-        "name": "3.0.0 (SNAPSHOT)"
+        "id": "2.2.0.BUILD-SNAPSHOT",
+        "name": "Latest SNAPSHOT"
       },
       {
-        "id": "3.0.0.M3",
-        "name": "3.0.0 (M3)"
-      },
-      {
-        "id": "2.7.1.BUILD-SNAPSHOT",
-        "name": "2.7.1 (SNAPSHOT)"
-      },
-      {
-        "id": "2.7.0.RELEASE",
-        "name": "2.7.0"
-      },
-      {
-        "id": "2.6.9.BUILD-SNAPSHOT",
-        "name": "2.6.9 (SNAPSHOT)"
-      },
-      {
-        "id": "2.6.8.RELEASE",
-        "name": "2.6.8"
-      },
-      {
-        "id": "2.5.14.RELEASE",
-        "name": "2.5.14"
-      },
-      {
-        "id": "2.4.13.RELEASE",
-        "name": "2.4.13"
-      },
-      {
-        "id": "2.3.12.RELEASE",
-        "name": "2.3.12"
+        "id": "2.1.1.RELEASE",
+        "name": "2.1.1."
       }
     ]
   },
