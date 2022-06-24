@@ -1,5 +1,5 @@
 {
-  "bootVersion": "2.0.1",
+  "bootVersion": "2.0.0",
   "dependencies": {
     "actuator": {
       "groupId": "org.springframework.boot",
@@ -634,7 +634,7 @@
     "spring-cloud": {
       "groupId": "org.springframework.cloud",
       "artifactId": "spring-cloud-dependencies",
-      "version": "Finchley.RC1",
+      "version": "Finchley.M9",
       "repositories": [
         "spring-milestones"
       ]
