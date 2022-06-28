@@ -1,57 +1,73 @@
 [
   {
+    "versionRange": "2.2.2",
+    "metadataConfig": "2.2.2",
+    "mode": "config"
+  },
+  {
     "versionRange": "[2.2.11,2.2.x]",
-    "metadata": "2.2.2",
-    "dependencies": "2.2.11"
+    "metadataClient": "2.2.2",
+    "dependencies": "2.2.11",
+    "mode": "client"
   },
   {
     "versionRange": "[2.2.8,2.2.10]",
-    "metadata": "2.2.2",
-    "dependencies": "2.2.8"
+    "metadataClient": "2.2.2",
+    "dependencies": "2.2.8",
+    "mode": "client"
   },
   {
     "versionRange": "[2.2.2,2.2.7]",
-    "metadata": "2.2.2",
-    "dependencies": "2.2.2"
+    "metadataClient": "2.2.2",
+    "dependencies": "2.2.2",
+    "mode": "client"
   },
   {
     "versionRange": "[2.2.0,2.2.1]",
-    "metadata": "2.2.0",
-    "dependencies": "2.2.0"
+    "metadataClient": "2.2.0",
+    "dependencies": "2.2.0",
+    "mode": "client"
   },
   {
     "versionRange": "[2.1.2,2.1.x]",
-    "metadata": "2.0.0",
-    "dependencies": "2.1.2"
+    "metadataClient": "2.0.0",
+    "dependencies": "2.1.2",
+    "mode": "client"
   },
   {
     "versionRange": "[2.1.0,2.1.1]",
-    "metadata": "2.0.0",
-    "dependencies": "2.1.0"
+    "metadataClient": "2.0.0",
+    "dependencies": "2.1.0",
+    "mode": "client"
   },
   {
     "versionRange": "[2.0.3,2.0.x]",
-    "metadata": "2.0.0",
-    "dependencies": "2.0.3"
+    "metadataClient": "2.0.0",
+    "dependencies": "2.0.3",
+    "mode": "client"
   },
   {
     "versionRange": "2.0.2",
-    "metadata": "2.0.0",
-    "dependencies": "2.0.2"
+    "metadataClient": "2.0.0",
+    "dependencies": "2.0.2",
+    "mode": "client"
   },
   {
     "versionRange": "2.0.1",
-    "metadata": "2.0.0",
-    "dependencies": "2.0.1"
+    "metadataClient": "2.0.0",
+    "dependencies": "2.0.1",
+    "mode": "client"
   },
   {
     "versionRange": "2.0.0",
-    "metadata": "2.0.0",
-    "dependencies": "2.0.0"
+    "metadataClient": "2.0.0",
+    "dependencies": "2.0.0",
+    "mode": "client"
   },
   {
     "versionRange": "[1.5.0,1.5.x]",
-    "metadata": "1.5.0",
-    "dependencies": "1.5.0"
+    "metadataClient": "1.5.0",
+    "dependencies": "1.5.0",
+    "mode": "client"
   }
 ]
