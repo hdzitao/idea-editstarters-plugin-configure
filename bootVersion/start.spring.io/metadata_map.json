@@ -1,6 +1,6 @@
 [
   {
-    "versionRange": "2.2.2",
+    "versionRange": "[2.2.2,2.2.2]",
     "metadataConfig": "2.2.2",
     "mode": "config"
   },
