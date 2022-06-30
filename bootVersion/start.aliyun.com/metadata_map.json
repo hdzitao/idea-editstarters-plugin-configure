@@ -2,7 +2,6 @@
   {
     "versionRange": "2.0.0",
     "metadataConfig": "2.0.0",
-    "mode": "config",
     "enable": false
   }
 ]

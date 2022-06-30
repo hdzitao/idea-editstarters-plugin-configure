@@ -2,25 +2,21 @@
   {
     "versionRange": "[2.2.2,2.2.x]",
     "metadataConfig": "2.2.2",
-    "mode": "config",
     "enable": true
   },
   {
     "versionRange": "[2.2.0,2.2.1]",
     "metadataConfig": "2.2.0",
-    "mode": "config",
     "enable": true
   },
   {
     "versionRange": "[2.0.0,2.1.x]",
     "metadataConfig": "2.0.0",
-    "mode": "config",
     "enable": true
   },
   {
     "versionRange": "[1.5.0,1.5.x]",
     "metadataConfig": "1.5.0",
-    "mode": "config",
     "enable": true
   }
 ]
