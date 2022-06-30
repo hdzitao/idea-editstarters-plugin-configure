@@ -14,32 +14,6 @@
       ],
       "forceSsl": false,
       "boms": {
-        "azure": {
-          "groupId": "com.azure.spring",
-          "artifactId": "azure-spring-boot-bom",
-          "versionProperty": "azure.version",
-          "mappings": [
-            {
-              "compatibilityRange": "[2.0.0.RELEASE,2.1.0.RELEASE)",
-              "groupId": "com.microsoft.azure",
-              "version": "2.0.10"
-            },
-            {
-              "compatibilityRange": "[2.1.0.RELEASE, 2.2.0.M1)",
-              "groupId": "com.microsoft.azure",
-              "version": "2.1.10"
-            },
-            {
-              "compatibilityRange": "[2.2.0.M1, 2.3.0.M1)",
-              "groupId": "com.microsoft.azure",
-              "version": "2.2.4"
-            },
-            {
-              "compatibilityRange": "[2.3.0.M1,2.4.0-M1)",
-              "version": "3.0.0"
-            }
-          ]
-        },
         "codecentric-spring-boot-admin": {
           "groupId": "de.codecentric",
           "artifactId": "spring-boot-admin-dependencies",
@@ -58,38 +32,8 @@
               "version": "2.2.4"
             },
             {
-              "compatibilityRange": "[2.3.0.M1,2.5.0-M1)",
+              "compatibilityRange": "[2.3.0.M1,2.5.0.M1)",
               "version": "2.3.1"
-            }
-          ]
-        },
-        "solace-spring-boot": {
-          "groupId": "com.solace.spring.boot",
-          "artifactId": "solace-spring-boot-bom",
-          "versionProperty": "solace-spring-boot.version",
-          "mappings": [
-            {
-              "compatibilityRange": "[2.2.0.RELEASE, 2.3.0.M1)",
-              "version": "1.0.0"
-            },
-            {
-              "compatibilityRange": "[2.3.0.M1,2.5.0-M1)",
-              "version": "1.1.0"
-            }
-          ]
-        },
-        "solace-spring-cloud": {
-          "groupId": "com.solace.spring.cloud",
-          "artifactId": "solace-spring-cloud-bom",
-          "versionProperty": "solace-spring-cloud.version",
-          "mappings": [
-            {
-              "compatibilityRange": "[2.2.0.RELEASE, 2.3.0.M1)",
-              "version": "1.0.0"
-            },
-            {
-              "compatibilityRange": "[2.3.0.M1,2.5.0-M1)",
-              "version": "1.1.1"
             }
           ]
         },
@@ -221,14 +165,14 @@
             },
             {
               "compatibilityRange": "[2.4.0.M4,2.4.x-SNAPSHOT)",
-              "version": "2020.0.0",
+              "version": "2020.0.0-M6",
               "repositories": [
                 "spring-milestones"
               ]
             },
             {
               "compatibilityRange": "2.4.x-SNAPSHOT",
-              "version": "2020.0.1-SNAPSHOT",
+              "version": "2020.0.0-SNAPSHOT",
               "repositories": [
                 "spring-snapshots",
                 "spring-milestones"
@@ -242,22 +186,75 @@
           "versionProperty": "spring-cloud-alibaba.version",
           "mappings": [
             {
-              "compatibilityRange": "[2.2.0.RELEASE,2.3.0.M1)",
-              "version": "2.2.1.RELEASE"
+              "compatibilityRange": "[2.2.0.RELEASE,2.3.x.BUILD-SNAPSHOT]",
+              "version": "2.2.2.RELEASE"
+            },
+            {
+              "compatibilityRange": "[2.1.0.M1,2.2.0.RELEASE)",
+              "version": "2.1.2.RELEASE"
+            },
+            {
+              "compatibilityRange": "[2.0.0.M1,2.1.0.M1)",
+              "version": "2.0.2.RELEASE"
+            },
+            {
+              "compatibilityRange": "[1.5.0.RELEASE,2.0.0.M1)",
+              "version": "1.5.1.RELEASE"
             }
           ]
         },
-        "spring-cloud-gcp": {
-          "groupId": "com.google.cloud",
-          "artifactId": "spring-cloud-gcp-dependencies",
-          "versionProperty": "spring-cloud-gcp.version",
-          "additionalBoms": [
-            "spring-cloud"
-          ],
+        "aliyun-spring-boot": {
+          "groupId": "com.alibaba.cloud",
+          "artifactId": "aliyun-spring-boot-dependencies",
+          "version": "1.0.0",
+          "versionProperty": "aliyun-spring-boot.version"
+        },
+        "solace-spring-cloud": {
+          "groupId": "com.solace.spring.cloud",
+          "artifactId": "solace-spring-cloud-bom",
+          "versionProperty": "solace-spring-cloud.version",
           "mappings": [
             {
-              "compatibilityRange": "[2.4.0-M1,2.5.0-M1)",
-              "version": "2.0.0-RC2"
+              "compatibilityRange": "[2.2.0.RELEASE, 2.3.0.M1)",
+              "version": "1.0.0"
+            },
+            {
+              "compatibilityRange": "[2.3.0.M1,2.5.0.M1)",
+              "version": "1.1.1"
+            }
+          ]
+        },
+        "spring-geode": {
+          "groupId": "org.springframework.geode",
+          "artifactId": "spring-geode-bom",
+          "versionProperty": "spring-geode.version",
+          "mappings": [
+            {
+              "compatibilityRange": "[2.2.0.M5,2.3.0.M1)",
+              "version": "1.2.12.RELEASE"
+            },
+            {
+              "compatibilityRange": "[2.3.0.M1,2.4.0.M1)",
+              "version": "1.3.7.RELEASE"
+            },
+            {
+              "compatibilityRange": "2.4.0.M1",
+              "version": "1.4.0"
+            }
+          ]
+        },
+        "solace-spring-boot": {
+          "groupId": "com.solace.spring.boot",
+          "artifactId": "solace-spring-boot-bom",
+          "versionProperty": "solace-spring-boot.version",
+          "mappings": [
+            {
+              "compatibilityRange": "[2.2.0.RELEASE, 2.3.0.M1)",
+              "version": "1.0.0"
+            },
+            {
+              "compatibilityRange": "[2.3.0.M1,2.5.0.M1)",
+              "version": "1.1.0"
             }
           ]
         },
@@ -282,29 +279,39 @@
               "version": "2.2.6.RELEASE"
             },
             {
-              "compatibilityRange": "[2.3.0.RELEASE,2.4.0-M1)",
+              "compatibilityRange": "[2.3.0.RELEASE,2.4.0.M1)",
               "version": "2.3.0.RELEASE"
             }
           ]
         },
-        "spring-geode": {
-          "groupId": "org.springframework.geode",
-          "artifactId": "spring-geode-bom",
-          "versionProperty": "spring-geode.version",
+        "azure": {
+          "groupId": "com.microsoft.azure",
+          "artifactId": "azure-spring-boot-bom",
+          "versionProperty": "azure.version",
           "mappings": [
             {
-              "compatibilityRange": "[2.2.0.M5,2.3.0.M1)",
-              "version": "1.2.12.RELEASE"
+              "compatibilityRange": "[2.0.0.RELEASE,2.1.0.RELEASE)",
+              "version": "2.0.10"
             },
             {
-              "compatibilityRange": "[2.3.0.M1,2.4.0-M1)",
-              "version": "1.3.7.RELEASE"
+              "compatibilityRange": "[2.1.0.RELEASE, 2.2.0.M1)",
+              "version": "2.1.10"
             },
             {
-              "compatibilityRange": "2.4.0-M1",
-              "version": "1.4.0"
+              "compatibilityRange": "[2.2.0.M1, 2.3.0.M1)",
+              "version": "2.2.4"
+            },
+            {
+              "compatibilityRange": "2.3.0.M1",
+              "version": "2.3.5"
             }
           ]
+        },
+        "testcontainers": {
+          "groupId": "org.testcontainers",
+          "artifactId": "testcontainers-bom",
+          "version": "1.15.0",
+          "versionProperty": "testcontainers.version"
         },
         "spring-statemachine": {
           "groupId": "org.springframework.statemachine",
@@ -331,12 +338,6 @@
             }
           ]
         },
-        "testcontainers": {
-          "groupId": "org.testcontainers",
-          "artifactId": "testcontainers-bom",
-          "version": "1.15.1",
-          "versionProperty": "testcontainers.version"
-        },
         "vaadin": {
           "groupId": "com.vaadin",
           "artifactId": "vaadin-bom",
@@ -347,8 +348,8 @@
               "version": "10.0.17"
             },
             {
-              "compatibilityRange": "[2.1.0.M1,2.5.0-M1)",
-              "version": "14.4.5"
+              "compatibilityRange": "[2.1.0.M1,2.5.0.M1)",
+              "version": "14.4.4"
             }
           ]
         },
@@ -358,22 +359,29 @@
           "versionProperty": "wavefront.version",
           "mappings": [
             {
-              "compatibilityRange": "[2.1.0.RELEASE,2.4.0-M1)",
+              "compatibilityRange": "[2.1.0.RELEASE,2.4.0.M1)",
               "version": "2.0.2"
             },
             {
-              "compatibilityRange": "[2.4.0-M1,2.4.x-SNAPSHOT)",
-              "version": "2.1.0-RC1",
-              "repositories": [
-                "spring-milestones"
-              ]
-            },
-            {
-              "compatibilityRange": "2.4.x-SNAPSHOT",
+              "compatibilityRange": "2.4.0.M1",
               "version": "2.1.0-SNAPSHOT",
               "repositories": [
                 "spring-snapshots"
               ]
+            }
+          ]
+        },
+        "spring-cloud-gcp": {
+          "groupId": "com.google.cloud",
+          "artifactId": "spring-cloud-gcp-dependencies",
+          "versionProperty": "spring-cloud-gcp.version",
+          "additionalBoms": [
+            "spring-cloud"
+          ],
+          "mappings": [
+            {
+              "compatibilityRange": "[2.4.0.M1,2.5.0.M1)",
+              "version": "2.0.0-RC2"
             }
           ]
         }
@@ -409,16 +417,16 @@
       },
       "maven": {
         "parent": {
-          "groupId": null,
-          "artifactId": null,
-          "version": null,
-          "includeSpringBootBom": false
+          "groupId": "com.example",
+          "artifactId": "your-parent-artifactId",
+          "version": "0.0.0-SNAPSHOT",
+          "includeSpringBootBom": true
         }
       },
       "platform": {
         "compatibilityRange": "2.0.0.RELEASE",
-        "v1FormatCompatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
-        "v2FormatCompatibilityRange": "2.4.0-M1"
+        "v1FormatCompatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
+        "v2FormatCompatibilityRange": "2.4.0.M1"
       }
     }
   },
@@ -429,15 +437,279 @@
     "description": "dependency identifiers (comma-separated)",
     "content": [
       {
-        "name": "Developer Tools",
+        "name": "Alibaba Cloud",
         "content": [
+          {
+            "name": "Alibaba Cloud RDS",
+            "id": "sca-rds",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "aliyun-rds-spring-boot-starter",
+            "scope": "compile",
+            "description": "阿里云关系型数据库RDS（Relational Database Service）是一种稳定可靠、可弹性伸缩的在线数据库服务，提供容灾、备份、恢复、迁移等方面的全套解决方案，彻底解决数据库运维的烦恼。",
+            "bom": "aliyun-spring-boot",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://github.com/alibaba/aliyun-spring-boot/tree/master/aliyun-spring-boot-samples/aliyun-rds-spring-boot-sample"
+              }
+            ]
+          },
+          {
+            "name": "Alibaba Cloud Redis",
+            "id": "sca-redis",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "aliyun-redis-spring-boot-starter",
+            "scope": "compile",
+            "description": "高可靠双机热备架构及可无缝扩展的集群架构，满足高读写性能场景及容量需弹性变配的业务需求。",
+            "bom": "aliyun-spring-boot",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://github.com/alibaba/aliyun-spring-boot/tree/master/aliyun-spring-boot-samples/aliyun-redis-spring-boot-sample"
+              }
+            ]
+          },
+          {
+            "name": "Alibaba Cloud OSS",
+            "id": "sca-oss",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "aliyun-oss-spring-boot-starter",
+            "scope": "compile",
+            "description": "阿里云对象存储服务（Object Storage Service，简称 OSS），是阿里云提供的海量、安全、低成本、高可靠的云存储服务.",
+            "bom": "aliyun-spring-boot",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://github.com/alibaba/aliyun-spring-boot/tree/master/aliyun-spring-boot-samples/aliyun-oss-spring-boot-sample"
+              }
+            ]
+          },
+          {
+            "name": "Alibaba Cloud SMS",
+            "id": "sca-sms",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "aliyun-sms-spring-boot-starter",
+            "scope": "compile",
+            "description": "覆盖全球的短信服务，友好、高效、智能的互联化通讯能力，帮助企业迅速搭建客户触达通道.",
+            "bom": "aliyun-spring-boot",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://github.com/alibaba/aliyun-spring-boot/tree/master/aliyun-spring-boot-samples/aliyun-sms-spring-boot-sample"
+              }
+            ]
+          },
+          {
+            "name": "Alibaba Cloud SchedulerX",
+            "id": "sca-schedulerx",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "aliyun-schedulerx-spring-boot-starter",
+            "scope": "compile",
+            "description": "阿里中间件团队开发的一款分布式任务调度产品，提供秒级、精准、高可靠、高可用的定时任务调度服务.",
+            "bom": "aliyun-spring-boot",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://github.com/alibaba/aliyun-spring-boot/tree/master/aliyun-spring-boot-samples/aliyun-schedulerx-spring-boot-sample"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spring Cloud Alibaba",
+        "content": [
+          {
+            "name": "Spring Cloud Alibaba Dubbo",
+            "id": "sca-dubbo",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "spring-cloud-starter-dubbo",
+            "scope": "compile",
+            "description": "Apache Dubbo 是一款高性能 Java RPC 框架.",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false,
+            "links": [
+              {
+                "rel": "guide",
+                "href": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html#_spring_cloud_alibaba_dubbo"
+              },
+              {
+                "rel": "reference",
+                "href": "https://github.com/alibaba/spring-cloud-alibaba/tree/master/spring-cloud-alibaba-examples/spring-cloud-alibaba-dubbo-examples"
+              }
+            ]
+          },
+          {
+            "name": "Nacos Service Discovery",
+            "id": "sca-nacos-discovery",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "spring-cloud-starter-alibaba-nacos-discovery",
+            "scope": "compile",
+            "description": "通过nacos实现的服务发现平台.",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html#_spring_cloud_alibaba_nacos_discovery"
+              },
+              {
+                "rel": "guide",
+                "href": "https://github.com/alibaba/spring-cloud-alibaba/blob/master/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/readme.md",
+                "description": "Nacos Service Discovery Example"
+              }
+            ]
+          },
+          {
+            "name": "Spring Cloud Alibaba Sentinel",
+            "id": "sca-sentinel",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "spring-cloud-starter-alibaba-sentinel",
+            "scope": "compile",
+            "description": "提供 Sentinel 自动接入和配置支持，提供 Spring Web/WebFlux、Feign、RestTemplate、注解等适配",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html#_spring_cloud_alibaba_sentinel"
+              },
+              {
+                "rel": "guide",
+                "href": "https://github.com/alibaba/spring-cloud-alibaba/tree/master/spring-cloud-alibaba-examples/sentinel-example/sentinel-core-example",
+                "description": "Sentinel Example"
+              }
+            ]
+          },
+          {
+            "name": "Spring Cloud Alibaba Sentinel DataSource",
+            "id": "sca-sentinel-datasource",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "spring-cloud-alibaba-sentinel-datasource",
+            "scope": "compile",
+            "description": "提供 Sentinel 动态数据源接入支持，方便用户整合 Nacos 等数据源动态管理规则",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false
+          },
+          {
+            "name": "Spring Cloud Alibaba Sentinel Dubbo Adapter",
+            "id": "sca-sentinel-dubbo-adapter",
+            "groupId": "com.alibaba.csp",
+            "artifactId": "sentinel-apache-dubbo-adapter",
+            "scope": "compile",
+            "description": "提供 Sentinel 对 Dubbo 的适配能力",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false
+          },
+          {
+            "name": "Spring Cloud Alibaba Sentinel Gateway",
+            "id": "sca-sentinel-gateway",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "spring-cloud-alibaba-sentinel-gateway",
+            "scope": "compile",
+            "description": "提供 Sentinel 网关流控自动接入支持，目前支持 Spring Cloud Gateway 和 Zuul",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false
+          },
+          {
+            "name": "Spring Cloud Alibaba Seata",
+            "id": "sca-seata",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "spring-cloud-starter-alibaba-seata",
+            "scope": "compile",
+            "description": "阿里巴巴开源产品，一个易于使用的高性能微服务分布式事务解决方案.",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false
+          },
+          {
+            "name": "Spring Cloud Alibaba RocketMQ",
+            "id": "sca-rocketmq",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "spring-cloud-starter-stream-rocketmq",
+            "scope": "compile",
+            "description": "一款开源的分布式消息系统，基于高可用分布式集群技术，提供低延时的、高可靠的消息发布与订阅服务.",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://github.com/alibaba/spring-cloud-alibaba/blob/master/spring-cloud-alibaba-docs/src/main/asciidoc-zh/rocketmq.adoc"
+              },
+              {
+                "rel": "guide",
+                "href": "https://help.aliyun.com/product/29530.html",
+                "description": "RocketMQ 文档首页"
+              },
+              {
+                "rel": "WebConsole",
+                "href": "https://ons.console.aliyun.com",
+                "description": "RocketMQ Web 控制台"
+              }
+            ]
+          },
+          {
+            "name": "Nacos Configuration",
+            "id": "sca-nacos-config",
+            "groupId": "com.alibaba.cloud",
+            "artifactId": "spring-cloud-starter-alibaba-nacos-config",
+            "scope": "compile",
+            "description": "通过Alibaba Nacos实现配置管理：支持分布式系统中的外部化配置、配置更改时自动刷新功能",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.7.RELEASE]",
+            "bom": "spring-cloud-alibaba",
+            "starter": false,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html#_spring_cloud_alibaba_nacos_config"
+              },
+              {
+                "rel": "guide",
+                "href": "https://github.com/alibaba/spring-cloud-alibaba/tree/master/spring-cloud-alibaba-examples/nacos-example/nacos-config-example",
+                "description": "Nacos Configuration Example"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "开发工具",
+        "content": [
+          {
+            "name": "Arthas",
+            "id": "arthas",
+            "groupId": "com.taobao.arthas",
+            "artifactId": "arthas-spring-boot-starter",
+            "version": "3.4.8",
+            "scope": "runtime",
+            "description": "Arthas 是Alibaba开源的Java诊断工具，允许开发者在不修改代码或重启服务器的基础上，实现Java应用程序的运行时诊断，深受开发者喜爱；",
+            "starter": true,
+            "links": [
+              {
+                "rel": "reference",
+                "href": "https://arthas.gitee.io/index.html"
+              }
+            ]
+          },
           {
             "name": "Spring Boot DevTools",
             "id": "devtools",
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-devtools",
             "scope": "runtime",
-            "description": "Provides fast application restarts, LiveReload, and configurations for enhanced development experience.",
+            "description": "提供快速的应用程序重启、重启、配置，以增强开发体验。",
             "starter": false,
             "links": [
               {
@@ -453,7 +725,7 @@
             "groupId": "org.projectlombok",
             "artifactId": "lombok",
             "scope": "annotationProcessor",
-            "description": "Java annotation library which helps to reduce boilerplate code.",
+            "description": "有助于减少样板代码的Java注释库。",
             "starter": false
           },
           {
@@ -462,7 +734,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-configuration-processor",
             "scope": "annotationProcessor",
-            "description": "Generate metadata for developers to offer contextual help and \"code completion\" when working with custom configuration keys (ex.application.properties/.yml files).",
+            "description": "生成元数据 供开发人员在使用自定义配置键（例如，application.properties / .yml文件）时提供上下文帮助和“代码补全”。",
             "starter": false,
             "links": [
               {
@@ -487,7 +759,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-web",
             "scope": "compile",
-            "description": "Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.",
+            "description": "使用Spring MVC构建Web（包括RESTful）应用程序。 使用Apache Tomcat作为默认的嵌入式容器。",
             "starter": true,
             "links": [
               {
@@ -522,7 +794,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-webflux",
             "scope": "compile",
-            "description": "Build reactive web applications with Spring WebFlux and Netty.",
+            "description": "使用Spring WebFlux和Netty构建响应式Web应用程序。",
             "starter": true
           },
           {
@@ -534,7 +806,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-rest",
             "scope": "compile",
-            "description": "Exposing Spring Data repositories over REST via Spring Data REST.",
+            "description": "使用 Spring Data REST 以 REST 形式暴露 Spring Data 存储库。",
             "starter": true,
             "links": [
               {
@@ -565,7 +837,7 @@
             "groupId": "org.springframework.session",
             "artifactId": "spring-session-core",
             "scope": "compile",
-            "description": "Provides an API and implementations for managing user session information.",
+            "description": "提供用于管理用户会话信息的API和实现。",
             "starter": false
           },
           {
@@ -575,7 +847,7 @@
             "artifactId": "spring-data-rest-hal-explorer",
             "scope": "compile",
             "description": "Browsing Spring Data REST repositories in your browser.",
-            "compatibilityRange": "2.2.0-M1",
+            "compatibilityRange": "2.2.0.M1",
             "starter": false
           },
           {
@@ -584,8 +856,8 @@
             "groupId": "org.springframework.data",
             "artifactId": "spring-data-rest-hal-browser",
             "scope": "compile",
-            "description": "Browsing Spring Data REST repositories in your browser.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.2.0-M1)",
+            "description": "在浏览器中浏览 Spring Data REST 仓库。",
+            "compatibilityRange": "[2.0.0.RELEASE,2.2.0.M1)",
             "starter": false
           },
           {
@@ -594,7 +866,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-hateoas",
             "scope": "compile",
-            "description": "Eases the creation of RESTful APIs that follow the HATEOAS principle when working with Spring / Spring MVC.",
+            "description": "在使用Spring / Spring MVC时，轻松创建遵循HATEOAS原理的RESTful API。",
             "starter": true,
             "links": [
               {
@@ -618,7 +890,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-web-services",
             "scope": "compile",
-            "description": "Facilitates contract-first SOAP development. Allows for the creation of flexible web services using one of the many ways to manipulate XML payloads.",
+            "description": "促进约定优先的SOAP开发。允许使用多种操作XML有效负载的方式之一来创建灵活的Web服务。",
             "starter": true,
             "links": [
               {
@@ -642,7 +914,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-jersey",
             "scope": "compile",
-            "description": "Framework for developing RESTful Web Services in Java that provides support for JAX-RS APIs.",
+            "description": "用Java开发RESTful Web服务的框架，该框架提供对JAX-RS API的支持。",
             "starter": true,
             "links": [
               {
@@ -661,8 +933,8 @@
             "groupId": "com.vaadin",
             "artifactId": "vaadin-spring-boot-starter",
             "scope": "compile",
-            "description": "Java framework for building rich client apps based on Web components.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.5.0-M1)",
+            "description": "Java框架，用于基于Web组件构建富客户端应用程序。",
+            "compatibilityRange": "[2.0.0.RELEASE,2.5.0.M1)",
             "bom": "vaadin",
             "starter": true,
             "links": [
@@ -680,7 +952,7 @@
         ]
       },
       {
-        "name": "Template Engines",
+        "name": "模板引擎",
         "content": [
           {
             "name": "Thymeleaf",
@@ -688,7 +960,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-thymeleaf",
             "scope": "compile",
-            "description": "A modern server-side Java template engine for both web and standalone environments. Allows HTML to be correctly displayed in browsers and as static prototypes.",
+            "description": "适用于Web和独立环境的现代服务器端Java模板引擎。允许HTML在浏览器中正确显示为静态原型。",
             "starter": true,
             "links": [
               {
@@ -709,7 +981,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-freemarker",
             "scope": "compile",
-            "description": "Java library to generate text output (HTML web pages, e-mails, configuration files, source code, etc.) based on templates and changing data.",
+            "description": "用于根据模板和更改的数据生成文本输出（HTML网页，电子邮件，配置文件，源代码等）的Java库。",
             "starter": true,
             "links": [
               {
@@ -725,7 +997,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-mustache",
             "scope": "compile",
-            "description": "Logic-less Templates. There are no if statements, else clauses, or for loops. Instead there are only tags.",
+            "description": "无逻辑的模板。没有if语句，else子句或for循环。 相反，只有标签。",
             "starter": true,
             "links": [
               {
@@ -744,7 +1016,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-groovy-templates",
             "scope": "compile",
-            "description": "Groovy templating engine.",
+            "description": "Groovy模板引擎。",
             "starter": true,
             "links": [
               {
@@ -757,7 +1029,7 @@
         ]
       },
       {
-        "name": "Security",
+        "name": "安全",
         "content": [
           {
             "name": "Spring Security",
@@ -765,7 +1037,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-security",
             "scope": "compile",
-            "description": "Highly customizable authentication and access-control framework for Spring applications.",
+            "description": "用于Spring应用程序的高度可定制的身份验证和访问控制框架。",
             "starter": true,
             "links": [
               {
@@ -796,7 +1068,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-oauth2-client",
             "scope": "compile",
-            "description": "Spring Boot integration for Spring Security's OAuth2/OpenID Connect client features.",
+            "description": "用于 Spring Security 的 OAuth2/OpenID Connect 客户端功能的 Spring Boot 集成。",
             "starter": true,
             "links": [
               {
@@ -812,7 +1084,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-oauth2-resource-server",
             "scope": "compile",
-            "description": "Spring Boot integration for Spring Security's OAuth2 resource server features.",
+            "description": "用于Spring Security的OAuth2资源服务器功能的Spring Boot集成。",
             "compatibilityRange": "2.1.0.M2",
             "starter": true,
             "links": [
@@ -829,7 +1101,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-ldap",
             "scope": "compile",
-            "description": "Makes it easier to build Spring based applications that use the Lightweight Directory Access Protocol.",
+            "description": "令使用轻量级目录访问协议的基于Spring的应用程序的构建更加容易。",
             "starter": true,
             "links": [
               {
@@ -851,40 +1123,28 @@
                 "artifactId": null,
                 "version": "1.2.1",
                 "starter": null,
-                "bom": null,
                 "repository": null
               },
               {
-                "compatibilityRange": "[2.2.0.M1,2.4.0-M1)",
+                "compatibilityRange": "[2.2.0.M1,2.4.0.M1)",
                 "groupId": null,
                 "artifactId": null,
                 "version": "1.4.0",
                 "starter": null,
-                "bom": null,
                 "repository": null
               },
               {
-                "compatibilityRange": "[2.4.0-M1,2.4.1)",
+                "compatibilityRange": "[2.4.0.M1,2.5.0.M1)",
                 "groupId": null,
                 "artifactId": null,
                 "version": "1.5.1",
                 "starter": null,
-                "bom": null,
-                "repository": null
-              },
-              {
-                "compatibilityRange": "[2.4.1,2.5.0-M1)",
-                "groupId": null,
-                "artifactId": null,
-                "version": "2.0.0",
-                "starter": null,
-                "bom": null,
                 "repository": null
               }
             ],
             "scope": "compile",
-            "description": "Okta specific configuration for Spring Security/Spring Boot OAuth2 features. Enable your Spring Boot application to work with Okta via OAuth 2.0/OIDC.",
-            "compatibilityRange": "[2.1.2.RELEASE,2.5.0-M1)",
+            "description": "Okta 特定于 Spring Security/Spring Boot OAuth2 功能的配置。使您的Spring Boot应用程序能够通过 OAuth 2.0/OIDC 与 Okta 一起使用。",
+            "compatibilityRange": "[2.1.2.RELEASE,2.5.0.M1)",
             "starter": true,
             "links": [
               {
@@ -912,7 +1172,7 @@
         ]
       },
       {
-        "name": "SQL",
+        "name": "关系型数据库",
         "content": [
           {
             "name": "JDBC API",
@@ -920,7 +1180,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-jdbc",
             "scope": "compile",
-            "description": "Database Connectivity API that defines how a client may connect and query a database.",
+            "description": "数据库连接API，定义客户端如何连接和查询数据库。",
             "starter": true,
             "links": [
               {
@@ -952,7 +1212,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-jpa",
             "scope": "compile",
-            "description": "Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate.",
+            "description": "通过 Java Persistence API 使用 Spring Data 和 Hibernate 在SQL存储中持久存储数据。",
             "starter": true,
             "links": [
               {
@@ -973,7 +1233,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-jdbc",
             "scope": "compile",
-            "description": "Persist data in SQL stores with plain JDBC using Spring Data.",
+            "description": "使用Spring Data时，通过纯JDBC在SQL存储中持久存储数据。",
             "compatibilityRange": "2.1.0.RELEASE",
             "starter": true,
             "links": [
@@ -997,7 +1257,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-r2dbc",
             "scope": "compile",
-            "description": "Provides Reactive Relational Database Connectivity to persist data in SQL stores using Spring Data in reactive applications.",
+            "description": "提供响应式关系数据库连接，以在响应式应用程序中使用Spring Data将数据存储在SQL存储中。",
             "compatibilityRange": "2.3.0.M3",
             "starter": true,
             "links": [
@@ -1030,22 +1290,20 @@
                 "artifactId": null,
                 "version": "2.0.1",
                 "starter": null,
-                "bom": null,
                 "repository": null
               },
               {
-                "compatibilityRange": "[2.1.0.RELEASE,2.5.0-M1)",
+                "compatibilityRange": "[2.1.0.RELEASE,2.5.0.M1)",
                 "groupId": null,
                 "artifactId": null,
                 "version": "2.1.4",
                 "starter": null,
-                "bom": null,
                 "repository": null
               }
             ],
             "scope": "compile",
-            "description": "Persistence framework with support for custom SQL, stored procedures and advanced mappings. MyBatis couples objects with stored procedures or SQL statements using a XML descriptor or annotations.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.5.0-M1)",
+            "description": "持久性框架，支持自定义SQL，存储过程和高级映射。 MyBatis使用XML描述符或注释将对象与存储过程或SQL语句耦合。",
+            "compatibilityRange": "[2.0.0.RELEASE,2.5.0.M1)",
             "starter": true,
             "links": [
               {
@@ -1060,12 +1318,47 @@
             ]
           },
           {
+            "name": "MyBatis Plus Framework",
+            "id": "mybatis-plus",
+            "groupId": "com.baomidou",
+            "artifactId": "mybatis-plus-boot-starter",
+            "mappings": [
+              {
+                "compatibilityRange": "[2.1.6.RELEASE,2.3.2.RELEASE)",
+                "groupId": null,
+                "artifactId": null,
+                "version": "3.2.0",
+                "starter": null,
+                "repository": null
+              },
+              {
+                "compatibilityRange": "[2.3.2.RELEASE,2.4.4]",
+                "groupId": null,
+                "artifactId": null,
+                "version": "3.4.2",
+                "starter": null,
+                "repository": null
+              }
+            ],
+            "scope": "compile",
+            "description": "MyBatis-Plus (opens new window)（简称 MP）是一个 MyBatis (opens new window)的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生。",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.4]",
+            "starter": true,
+            "links": [
+              {
+                "rel": "guide",
+                "href": "https://baomidou.com/en/guide/",
+                "description": "MyBatis Plus Official"
+              }
+            ]
+          },
+          {
             "name": "Liquibase Migration",
             "id": "liquibase",
             "groupId": "org.liquibase",
             "artifactId": "liquibase-core",
             "scope": "compile",
-            "description": "Liquibase database migration and source control library.",
+            "description": "Liquibase数据库迁移和源代码控制库。",
             "starter": false,
             "links": [
               {
@@ -1081,7 +1374,7 @@
             "groupId": "org.flywaydb",
             "artifactId": "flyway-core",
             "scope": "compile",
-            "description": "Version control for your database so you can migrate from any version (incl. an empty database) to the latest version of the schema.",
+            "description": "数据库的版本控制，您可以从任何版本（包括空数据库）迁移到架构的最新版本。",
             "starter": false,
             "links": [
               {
@@ -1097,7 +1390,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-jooq",
             "scope": "compile",
-            "description": "Generate Java code from your database and build type safe SQL queries through a fluent API.",
+            "description": "从数据库中生成Java代码，并通过流畅的API构建类型安全的SQL查询。",
             "starter": true,
             "links": [
               {
@@ -1113,7 +1406,7 @@
             "groupId": "com.ibm.db2",
             "artifactId": "jcc",
             "scope": "runtime",
-            "description": "A JDBC driver that provides access to IBM DB2.",
+            "description": "提供对IBM DB2的访问的JDBC驱动程序。",
             "compatibilityRange": "2.2.0.M6",
             "starter": false
           },
@@ -1123,7 +1416,7 @@
             "groupId": "org.apache.derby",
             "artifactId": "derby",
             "scope": "runtime",
-            "description": "An open source relational database implemented entirely in Java.",
+            "description": "一个完全用Java实现的开源关系数据库。",
             "starter": false
           },
           {
@@ -1132,7 +1425,7 @@
             "groupId": "com.h2database",
             "artifactId": "h2",
             "scope": "runtime",
-            "description": "Provides a fast in-memory database that supports JDBC API and R2DBC access, with a small (2mb) footprint. Supports embedded and server modes as well as a browser based console application.",
+            "description": "提供一个快速的内存数据库，该数据库支持JDBC API和R2DBC访问，并且占用空间很小（2mb）。 支持嵌入式和服务器模式以及基于浏览器的控制台应用程序。",
             "starter": false
           },
           {
@@ -1141,7 +1434,7 @@
             "groupId": "org.hsqldb",
             "artifactId": "hsqldb",
             "scope": "runtime",
-            "description": "Lightweight 100% Java SQL Database Engine.",
+            "description": "轻量级 100％ Java SQL 数据库引擎。",
             "starter": false
           },
           {
@@ -1159,7 +1452,7 @@
             "groupId": "com.microsoft.sqlserver",
             "artifactId": "mssql-jdbc",
             "scope": "runtime",
-            "description": "A JDBC and R2DBC driver that provides access to Microsoft SQL Server and Azure SQL Database from any Java application.",
+            "description": "JDBC和R2DBC驱动程序，可从任何Java应用程序访问Microsoft SQL Server和Azure SQL数据库。",
             "starter": false
           },
           {
@@ -1168,7 +1461,7 @@
             "groupId": "mysql",
             "artifactId": "mysql-connector-java",
             "scope": "runtime",
-            "description": "MySQL JDBC and R2DBC driver.",
+            "description": "MySQL JDBC和R2DBC驱动程序。",
             "starter": false,
             "links": [
               {
@@ -1190,12 +1483,11 @@
                 "artifactId": null,
                 "version": null,
                 "starter": null,
-                "bom": null,
                 "repository": null
               }
             ],
             "scope": "runtime",
-            "description": "A JDBC driver that provides access to Oracle.",
+            "description": "提供对Oracle的访问的JDBC驱动程序。",
             "compatibilityRange": "2.2.0.RC1",
             "starter": false
           },
@@ -1205,13 +1497,13 @@
             "groupId": "org.postgresql",
             "artifactId": "postgresql",
             "scope": "runtime",
-            "description": "A JDBC and R2DBC driver that allows Java programs to connect to a PostgreSQL database using standard, database independent Java code.",
+            "description": "JDBC和R2DBC驱动程序，允许Java程序使用标准的，独立于数据库的Java代码连接到PostgreSQL数据库。",
             "starter": false
           }
         ]
       },
       {
-        "name": "NoSQL",
+        "name": "非关系型数据库",
         "content": [
           {
             "name": "Spring Data Redis (Access+Driver)",
@@ -1222,7 +1514,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-redis",
             "scope": "compile",
-            "description": "Advanced and thread-safe Java Redis client for synchronous, asynchronous, and reactive usage. Supports Cluster, Sentinel, Pipelining, Auto-Reconnect, Codecs and much more.",
+            "description": "先进且线程安全的Java Redis客户端，用于同步，异步和反应式使用。 支持群集，前哨，流水线，自动重新连接，编解码器等。",
             "starter": true,
             "links": [
               {
@@ -1246,7 +1538,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-redis-reactive",
             "scope": "compile",
-            "description": "Access Redis key-value data stores in a reactive fashion with Spring Data Redis.",
+            "description": "使用Spring Data Redis以响应方式访问Redis键值数据存储。",
             "starter": true,
             "links": [
               {
@@ -1267,7 +1559,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-mongodb",
             "scope": "compile",
-            "description": "Store data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time.",
+            "description": "将数据存储在灵活的，类似于JSON的文档中，这意味着字段随文档的不同而不同，并且数据结构可以随时间而变化。",
             "starter": true,
             "links": [
               {
@@ -1291,7 +1583,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-mongodb-reactive",
             "scope": "compile",
-            "description": "Provides asynchronous stream processing with non-blocking back pressure for MongoDB.",
+            "description": "为MongoDB提供具有无阻塞背压的异步流处理。",
             "starter": true,
             "links": [
               {
@@ -1307,7 +1599,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-elasticsearch",
             "scope": "compile",
-            "description": "A distributed, RESTful search and analytics engine with Spring Data Elasticsearch.",
+            "description": "带有Spring Data Elasticsearch的分布式RESTful搜索和分析引擎。",
             "starter": true,
             "links": [
               {
@@ -1323,7 +1615,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-solr",
             "scope": "compile",
-            "description": "Apache Solr is an open source enterprise search platform built on Apache Lucene.",
+            "description": "Apache Solr是基于Apache Lucene构建的开源企业搜索平台。",
             "starter": true,
             "links": [
               {
@@ -1339,7 +1631,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-cassandra",
             "scope": "compile",
-            "description": "A free and open-source, distributed, NoSQL database management system that offers high-scalability and high-performance.",
+            "description": "一个免费的开源NoSQL分布式数据库管理系统，可提供高可伸缩性和高性能。",
             "starter": true,
             "links": [
               {
@@ -1358,7 +1650,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-cassandra-reactive",
             "scope": "compile",
-            "description": "Access Cassandra NoSQL Database in a reactive fashion.",
+            "description": "以反应方式访问Cassandra NoSQL数据库。",
             "starter": true,
             "links": [
               {
@@ -1401,7 +1693,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-couchbase",
             "scope": "compile",
-            "description": "NoSQL document-oriented database that offers in memory-first architecture, geo-distributed deployments, and workload isolation.",
+            "description": "NoSQL面向文档的数据库，提供内存优先的体系结构，地理分布的部署和工作负载隔离。",
             "starter": true,
             "links": [
               {
@@ -1420,7 +1712,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-couchbase-reactive",
             "scope": "compile",
-            "description": "Access Couchbase NoSQL database in a reactive fashion with Spring Data Couchbase.",
+            "description": "使用Spring Data Couchbase以响应方式访问Couchbase NoSQL数据库。",
             "starter": true,
             "links": [
               {
@@ -1436,7 +1728,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-data-neo4j",
             "scope": "compile",
-            "description": "An open source NoSQL database that stores data structured as graphs consisting of nodes, connected by relationships.",
+            "description": "一个开放源代码NoSQL数据库，该数据库存储结构化为图形的数据，这些图形由通过关系连接的节点组成。",
             "starter": true,
             "links": [
               {
@@ -1454,7 +1746,7 @@
         ]
       },
       {
-        "name": "Messaging",
+        "name": "消息",
         "content": [
           {
             "name": "Spring Integration",
@@ -1462,7 +1754,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-integration",
             "scope": "compile",
-            "description": "Adds support for Enterprise Integration Patterns. Enables lightweight messaging and supports integration with external systems via declarative adapters.",
+            "description": "添加了对企业集成模式的支持。 支持轻量级消息传递，并通过声明性适配器支持与外部系统的集成。",
             "starter": true,
             "links": [
               {
@@ -1483,7 +1775,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-amqp",
             "scope": "compile",
-            "description": "Gives your applications a common platform to send and receive messages, and your messages a safe place to live until received.",
+            "description": "为您的应用程序提供一个发送和接收消息的通用平台，并使您的消息成为一个安全的生存环境，直到收到消息为止。",
             "starter": true,
             "links": [
               {
@@ -1504,7 +1796,7 @@
             "groupId": "org.springframework.kafka",
             "artifactId": "spring-kafka",
             "scope": "compile",
-            "description": "Publish, subscribe, store, and process streams of records.",
+            "description": "发布，订阅，存储和处理记录流。",
             "starter": false,
             "links": [
               {
@@ -1520,7 +1812,7 @@
             "groupId": "org.apache.kafka",
             "artifactId": "kafka-streams",
             "scope": "compile",
-            "description": "Building stream processing applications with Apache Kafka Streams.",
+            "description": "使用Apache Kafka Streams构建流处理应用程序。",
             "starter": false,
             "links": [
               {
@@ -1546,7 +1838,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-activemq",
             "scope": "compile",
-            "description": "Spring JMS support with Apache ActiveMQ 'Classic'.",
+            "description": "带有 Apache ActiveMQ &#39;Classic&#39; 模式的 Spring JMS 支持。",
             "starter": true,
             "links": [
               {
@@ -1567,7 +1859,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-artemis",
             "scope": "compile",
-            "description": "Spring JMS support with Apache ActiveMQ Artemis.",
+            "description": "带有 Apache ActiveMQ &#39;Artemis&#39; 模式的 Spring JMS 支持。",
             "starter": true,
             "links": [
               {
@@ -1588,7 +1880,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-websocket",
             "scope": "compile",
-            "description": "Build WebSocket applications with SockJS and STOMP.",
+            "description": "使用SockJS和STOMP构建WebSocket应用程序。",
             "starter": true,
             "links": [
               {
@@ -1612,7 +1904,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-rsocket",
             "scope": "compile",
-            "description": "RSocket.io applications with Spring Messaging and Netty.",
+            "description": "带有Spring Messaging和Netty的RSocket.io应用程序。",
             "compatibilityRange": "2.2.0.M2",
             "starter": true
           },
@@ -1628,7 +1920,6 @@
                 "artifactId": null,
                 "version": "2.22.4",
                 "starter": null,
-                "bom": null,
                 "repository": null
               },
               {
@@ -1637,7 +1928,6 @@
                 "artifactId": null,
                 "version": "2.25.2",
                 "starter": null,
-                "bom": null,
                 "repository": null
               },
               {
@@ -1646,31 +1936,20 @@
                 "artifactId": null,
                 "version": "3.3.0",
                 "starter": null,
-                "bom": null,
                 "repository": null
               },
               {
-                "compatibilityRange": "[2.3.0.M1,2.4.0-M1)",
+                "compatibilityRange": "[2.3.0.M1,2.4.0.M1)",
                 "groupId": null,
                 "artifactId": null,
                 "version": "3.5.0",
                 "starter": null,
-                "bom": null,
-                "repository": null
-              },
-              {
-                "compatibilityRange": "[2.4.0.M1,2.5.0-M1)",
-                "groupId": null,
-                "artifactId": null,
-                "version": "3.7.0",
-                "starter": null,
-                "bom": null,
                 "repository": null
               }
             ],
             "scope": "compile",
-            "description": "Apache Camel is an open source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.",
-            "compatibilityRange": "[2.0.0.M1,2.5.0-M1)",
+            "description": "Apache Camel是一个开源集成框架，可让您快速轻松地集成使用或生成数据的各种系统。",
+            "compatibilityRange": "[2.0.0.M1,2.4.0.M1)",
             "starter": true,
             "links": [
               {
@@ -1686,8 +1965,8 @@
             "groupId": "com.solace.spring.boot",
             "artifactId": "solace-spring-boot-starter",
             "scope": "compile",
-            "description": "Connect to a Solace PubSub+ Advanced Event Broker to publish, subscribe, request/reply and store/replay messages",
-            "compatibilityRange": "[2.2.0.RELEASE,2.5.0-M1)",
+            "description": "连接到Solace PubSub+ Advanced Event Broker以发布，订阅，请求/答复以及存储/重播消息",
+            "compatibilityRange": "[2.2.0.RELEASE,2.5.0.M1)",
             "bom": "solace-spring-boot",
             "starter": true,
             "links": [
@@ -1706,7 +1985,7 @@
         ]
       },
       {
-        "name": "I/O",
+        "name": "输入/输出",
         "content": [
           {
             "name": "Spring Batch",
@@ -1714,7 +1993,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-batch",
             "scope": "compile",
-            "description": "Batch applications with transactions, retry/skip and chunk based processing.",
+            "description": "批处理应用程序,具有事务、重试/跳过和基于块的处理。",
             "starter": true,
             "links": [
               {
@@ -1735,7 +2014,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-validation",
             "scope": "compile",
-            "description": "Bean Validation with Hibernate validator.",
+            "description": "使用Hibernate验证程序进行JSR-303验证。",
             "starter": true,
             "links": [
               {
@@ -1751,7 +2030,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-mail",
             "scope": "compile",
-            "description": "Send email using Java Mail and Spring Framework's JavaMailSender.",
+            "description": "使用Java Mail和Spring Framework的JavaMailSender发送电子邮件。",
             "starter": true,
             "links": [
               {
@@ -1767,7 +2046,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-quartz",
             "scope": "compile",
-            "description": "Schedule jobs using Quartz.",
+            "description": "使用Quartz调度作业。",
             "starter": true
           },
           {
@@ -1776,7 +2055,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-cache",
             "scope": "compile",
-            "description": "Provides cache-related operations, such as the ability to update the content of the cache, but does not provide the actual data store.",
+            "description": "提供与缓存有关的操作，例如更新缓存内容的能力，但不提供实际的数据存储。",
             "starter": true,
             "links": [
               {
@@ -1802,7 +2081,7 @@
             "groupId": "org.springframework.boot",
             "artifactId": "spring-boot-starter-actuator",
             "scope": "compile",
-            "description": "Supports built in (or custom) endpoints that let you monitor and manage your application - such as application health, metrics, sessions, etc.",
+            "description": "支持内置（或自定义）端点，使您可以监视和管理应用程序-例如应用程序运行状况，指标，会话等。",
             "starter": true,
             "links": [
               {
@@ -1818,13 +2097,13 @@
             ]
           },
           {
-            "name": "Codecentric's Spring Boot Admin (Client)",
+            "name": "Codecentric&#39;s Spring Boot Admin (Client)",
             "id": "codecentric-spring-boot-admin-client",
             "groupId": "de.codecentric",
             "artifactId": "spring-boot-admin-starter-client",
             "scope": "compile",
-            "description": "Required for your application to register with a Codecentric's Spring Boot Admin Server instance.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.5.0-M1)",
+            "description": "应用程序向Spring Boot Admin Server实例注册所必要依赖。",
+            "compatibilityRange": "[2.0.0.RELEASE,2.5.0.M1)",
             "bom": "codecentric-spring-boot-admin",
             "starter": true,
             "links": [
@@ -1835,13 +2114,13 @@
             ]
           },
           {
-            "name": "Codecentric's Spring Boot Admin (Server)",
+            "name": "Codecentric&#39;s Spring Boot Admin (Server)",
             "id": "codecentric-spring-boot-admin-server",
             "groupId": "de.codecentric",
             "artifactId": "spring-boot-admin-starter-server",
             "scope": "compile",
-            "description": "A community project to manage and monitor your Spring Boot applications. Provides a UI on top of the Spring Boot Actuator endpoints.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.5.0-M1)",
+            "description": "一个社区项目，用于管理和监视您的Spring Boot应用程序。 在Spring Boot Actuator端点的顶部提供一个UI。",
+            "compatibilityRange": "[2.0.0.RELEASE,2.5.0.M1)",
             "bom": "codecentric-spring-boot-admin",
             "starter": true,
             "links": [
@@ -1854,7 +2133,7 @@
         ]
       },
       {
-        "name": "Observability",
+        "name": "观测",
         "content": [
           {
             "name": "Datadog",
@@ -1862,7 +2141,7 @@
             "groupId": "io.micrometer",
             "artifactId": "micrometer-registry-datadog",
             "scope": "runtime",
-            "description": "Datadog is a dimensional time-series SAAS with built-in dashboarding and alerting.",
+            "description": "Datadog是具有内置仪表板和警报功能的维度时间序列SAAS。",
             "starter": false,
             "links": [
               {
@@ -1878,7 +2157,7 @@
             "groupId": "io.micrometer",
             "artifactId": "micrometer-registry-influx",
             "scope": "runtime",
-            "description": "Support real-time stream processing and storage of time-series data.",
+            "description": "支持实时流处理和时间序列数据的存储。",
             "starter": false,
             "links": [
               {
@@ -1894,7 +2173,7 @@
             "groupId": "io.micrometer",
             "artifactId": "micrometer-registry-graphite",
             "scope": "runtime",
-            "description": "Hierarchical metrics systems backed by a fixed-size database.",
+            "description": "由固定大小的数据库支持的分层度量标准系统。",
             "starter": false,
             "links": [
               {
@@ -1910,7 +2189,7 @@
             "groupId": "io.micrometer",
             "artifactId": "micrometer-registry-new-relic",
             "scope": "runtime",
-            "description": "SaaS offering with a full UI and a query language called NRQL.",
+            "description": "具有完整UI和称为NRQL的查询语言的SaaS产品。",
             "starter": false,
             "links": [
               {
@@ -1926,7 +2205,7 @@
             "groupId": "io.micrometer",
             "artifactId": "micrometer-registry-prometheus",
             "scope": "runtime",
-            "description": "An in-memory dimensional time series database with a simple built-in UI, a custom query language, and math operations.",
+            "description": "具有简单内置UI，自定义查询语言和数学运算的内存中维时间序列数据库。",
             "starter": false,
             "links": [
               {
@@ -1942,7 +2221,7 @@
             "groupId": "com.wavefront",
             "artifactId": "wavefront-spring-boot-starter",
             "scope": "compile",
-            "description": "Tanzu Observability by Wavefront is a SaaS-based metrics monitoring and analytics platform that lets you visualize, query, and alert over data from across your entire stack (infrastructure, network, custom app metrics, business KPIs, etc.)",
+            "description": "Wavefront的Tanzu Observability是基于SaaS的指标监视和分析平台，可让您可视化，查询和警告整个堆栈中的数据（基础结构，网络，自定义应用程序指标，业务KPI等）。",
             "compatibilityRange": "2.1.0.RELEASE",
             "bom": "wavefront",
             "starter": true,
@@ -1962,7 +2241,7 @@
         ]
       },
       {
-        "name": "Testing",
+        "name": "测试",
         "content": [
           {
             "name": "Spring REST Docs",
@@ -1970,7 +2249,7 @@
             "groupId": "org.springframework.restdocs",
             "artifactId": "spring-restdocs-mockmvc",
             "scope": "test",
-            "description": "Document RESTful services by combining hand-written with Asciidoctor and auto-generated snippets produced with Spring MVC Test.",
+            "description": "通过结合使用Asciidoctor手写和通过Spring MVC Test自动生成的代码片段来记录RESTful服务。",
             "starter": false
           },
           {
@@ -1995,7 +2274,7 @@
             "groupId": "org.springframework.cloud",
             "artifactId": "spring-cloud-starter-contract-verifier",
             "scope": "test",
-            "description": "Moves TDD to the level of software architecture by enabling Consumer Driven Contract (CDC) development.",
+            "description": "通过启用“消费者驱动合同”（CDC）开发，将TDD升级到软件体系结构级别。",
             "bom": "spring-cloud",
             "starter": true,
             "links": [
@@ -2012,7 +2291,7 @@
             "groupId": "org.springframework.cloud",
             "artifactId": "spring-cloud-starter-contract-stub-runner",
             "scope": "test",
-            "description": "Stub Runner for HTTP/Messaging based communication. Allows creating WireMock stubs from RestDocs tests.",
+            "description": "Stub Runner，用于基于 HTTP/消息 传递的通信。允许通过RestDocs测试创建WireMock存根。",
             "bom": "spring-cloud",
             "starter": true
           },
@@ -2022,7 +2301,7 @@
             "groupId": "com.unboundid",
             "artifactId": "unboundid-ldapsdk",
             "scope": "test",
-            "description": "Provides a platform neutral way for running a LDAP server in unit tests.",
+            "description": "提供在单元测试中运行LDAP服务器的平台无关的方法。",
             "starter": false,
             "links": [
               {
@@ -2038,8 +2317,186 @@
             "groupId": "de.flapdoodle.embed",
             "artifactId": "de.flapdoodle.embed.mongo",
             "scope": "test",
-            "description": "Provides a platform neutral way for running MongoDB in unit tests.",
+            "description": "提供在平台测试中运行MongoDB的平台无关的方法。",
             "starter": false
+          },
+          {
+            "name": "Junit",
+            "id": "junit",
+            "groupId": "junit",
+            "artifactId": "junit",
+            "scope": "test",
+            "description": "Java语言的单元测试框架",
+            "starter": false
+          }
+        ]
+      },
+      {
+        "name": "架构",
+        "content": [
+          {
+            "name": "cola-core",
+            "id": "cola-core",
+            "groupId": "com.aliyun",
+            "artifactId": "cola-core",
+            "version": "3.0.0",
+            "scope": "compile",
+            "description": "COLA 框架的核心库",
+            "starter": true
+          },
+          {
+            "name": "cola-common",
+            "id": "cola-common",
+            "groupId": "com.aliyun",
+            "artifactId": "cola-common",
+            "version": "3.0.0",
+            "scope": "compile",
+            "description": "COLA 框架通用组件",
+            "starter": true
+          },
+          {
+            "name": "cola-framework-archetype-web",
+            "id": "cola-framework-archetype-web",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-framework-archetype-web",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "COLA框架WEB层",
+            "starter": true
+          },
+          {
+            "name": "cola-framework-archetype-service",
+            "id": "cola-framework-archetype-service",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-framework-archetype-service",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "COLA框架服务",
+            "starter": true
+          },
+          {
+            "name": "cola-component-exception",
+            "id": "cola-component-exception",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-component-exception",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "定义了异常格式，主要有BizException和SysException",
+            "starter": true
+          },
+          {
+            "name": "cola-component-dto",
+            "id": "cola-component-dto",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-component-dto",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "定义了DTO格式，包括分页",
+            "starter": true
+          },
+          {
+            "name": "cola-component-domain-starter",
+            "id": "cola-component-domain-starter",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-component-domain-starter",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "Spring托管的领域实体组件",
+            "starter": true
+          },
+          {
+            "name": "cola-component-catchlog-starter",
+            "id": "cola-component-catchlog-starter",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-component-catchlog-starter",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "异常处理和日志组件",
+            "starter": true
+          },
+          {
+            "name": "cola-component-extension-starter",
+            "id": "cola-component-extension-starter",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-component-extension-starter",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "扩展点组件",
+            "starter": true
+          },
+          {
+            "name": "cola-component-statemachine",
+            "id": "cola-component-statemachine",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-component-statemachine",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "状态机组件",
+            "starter": true
+          },
+          {
+            "name": "cola-component-test-container",
+            "id": "cola-component-test-container",
+            "groupId": "com.alibaba.cola",
+            "artifactId": "cola-component-test-container",
+            "version": "4.0.1",
+            "scope": "compile",
+            "description": "组件测试容器",
+            "starter": true
+          }
+        ]
+      },
+      {
+        "name": "杂项",
+        "content": [
+          {
+            "name": "Fastjson",
+            "id": "fastjson",
+            "groupId": "com.alibaba",
+            "artifactId": "fastjson",
+            "version": "1.2.72",
+            "scope": "compile",
+            "description": "Fastjson 是一个 Java 库，可以将 Java 对象转换为 JSON 格式，当然它也可以将 JSON 字符串转换为 Java 对象",
+            "starter": true
+          },
+          {
+            "name": "Apache Commons Lang",
+            "id": "commons-lang3",
+            "groupId": "org.apache.commons",
+            "artifactId": "commons-lang3",
+            "version": "3.1",
+            "scope": "compile",
+            "description": "Java实用程序类的软件包，用于java.lang的层次结构中的类，或者被认为是标准的以证明存在于java.lang中。",
+            "starter": true
+          },
+          {
+            "name": "Gson",
+            "id": "gson",
+            "groupId": "com.google.code.gson",
+            "artifactId": "gson",
+            "version": "2.8.5",
+            "scope": "compile",
+            "description": "Gson 是一个 Google 开发的序列化库，可以将 Java 对象转换为 JSON 格式，当然它也可以将 JSON 字符串转换为 Java 对象",
+            "starter": true
+          },
+          {
+            "name": "Commons-io",
+            "id": "commons-io",
+            "groupId": "commons-io",
+            "artifactId": "commons-io",
+            "version": "2.6",
+            "scope": "compile",
+            "description": "Commons IO is a library of utilities to assist with developing IO functionality.",
+            "starter": true
+          },
+          {
+            "name": "root-starter",
+            "id": "root-starter",
+            "groupId": "org.springframework.boot",
+            "artifactId": "spring-boot-starter",
+            "scope": "compile",
+            "description": "Root starter of Spring Boot.",
+            "starter": true
           }
         ]
       },
@@ -2105,7 +2562,6 @@
             "artifactId": "spring-cloud-starter-security",
             "scope": "compile",
             "description": "A declarative model which can be heavily configured externally (or centrally) lends itself to the implementation of large systems of co-operating, remote components, usually with a central indentity management service.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
             "bom": "spring-cloud",
             "starter": true
           },
@@ -2116,7 +2572,6 @@
             "artifactId": "spring-cloud-starter-oauth2",
             "scope": "compile",
             "description": "OAuth2 and distributed application patterns with spring-cloud-security.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
             "bom": "spring-cloud",
             "starter": true
           }
@@ -2147,7 +2602,6 @@
                 "artifactId": "spring-cloud-starter-open-service-broker-webmvc",
                 "version": "2.1.3.RELEASE",
                 "starter": null,
-                "bom": null,
                 "repository": null
               },
               {
@@ -2156,22 +2610,20 @@
                 "artifactId": null,
                 "version": "3.0.4.RELEASE",
                 "starter": null,
-                "bom": null,
                 "repository": null
               },
               {
-                "compatibilityRange": "[2.2.0.M1,2.4.0-M1)",
+                "compatibilityRange": "[2.2.0.M1,2.4.0.M1)",
                 "groupId": null,
                 "artifactId": null,
                 "version": "3.1.1.RELEASE",
                 "starter": null,
-                "bom": null,
                 "repository": null
               }
             ],
             "scope": "compile",
             "description": "Framework for building Spring Boot apps that implement the Open Service Broker API, which can deliver services to applications running within cloud native platforms such as Cloud Foundry, Kubernetes and OpenShift.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "starter": true,
             "links": [
               {
@@ -2196,7 +2648,7 @@
             "groupId": "org.springframework.cloud",
             "artifactId": "spring-cloud-starter-config",
             "scope": "compile",
-            "description": "Client that connects to a Spring Cloud Config Server to fetch the application's configuration.",
+            "description": "Client that connects to a Spring Cloud Config Server to fetch the application&#39;s configuration.",
             "bom": "spring-cloud",
             "starter": true
           },
@@ -2223,7 +2675,7 @@
             "groupId": "org.springframework.cloud",
             "artifactId": "spring-cloud-starter-vault-config",
             "scope": "compile",
-            "description": "Provides client-side support for externalized configuration in a distributed system. Using HashiCorp's Vault you have a central place to manage external secret properties for applications across all environments.",
+            "description": "Provides client-side support for externalized configuration in a distributed system. Using HashiCorp&#39;s Vault you have a central place to manage external secret properties for applications across all environments.",
             "bom": "spring-cloud",
             "starter": true
           },
@@ -2239,7 +2691,6 @@
                 "artifactId": null,
                 "version": null,
                 "starter": false,
-                "bom": null,
                 "repository": null
               }
             ],
@@ -2260,7 +2711,6 @@
                 "artifactId": null,
                 "version": null,
                 "starter": false,
-                "bom": null,
                 "repository": null
               }
             ],
@@ -2343,7 +2793,7 @@
             "artifactId": "spring-cloud-starter-netflix-zuul",
             "scope": "compile",
             "description": "Intelligent and programmable routing with Spring Cloud Netflix Zuul.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": true,
             "links": [
@@ -2378,7 +2828,7 @@
             "artifactId": "spring-cloud-starter-netflix-ribbon",
             "scope": "compile",
             "description": "Client-side load-balancing with Spring Cloud Netflix and Ribbon.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": true,
             "links": [
@@ -2450,7 +2900,7 @@
             "artifactId": "spring-cloud-starter-netflix-hystrix",
             "scope": "compile",
             "description": "Circuit breaker with Spring Cloud Netflix Hystrix.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": true,
             "links": [
@@ -2468,7 +2918,7 @@
             "artifactId": "spring-cloud-starter-netflix-hystrix-dashboard",
             "scope": "compile",
             "description": "Circuit breaker dashboard with Spring Cloud Netflix Hystrix.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": true
           },
@@ -2479,7 +2929,7 @@
             "artifactId": "spring-cloud-starter-netflix-turbine",
             "scope": "compile",
             "description": "Circuit breaker metric aggregation using spring-cloud-netflix with Turbine and server-sent events.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": true
           },
@@ -2490,7 +2940,7 @@
             "artifactId": "spring-cloud-starter-netflix-turbine-stream",
             "scope": "compile",
             "description": "Circuit breaker metric aggregation using spring-cloud-netflix with Turbine and Spring Cloud Stream (requires a binder, e.g. Apache Kafka or RabbitMQ).",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": true
           }
@@ -2521,7 +2971,6 @@
                 "artifactId": "spring-cloud-starter-zipkin",
                 "version": null,
                 "starter": true,
-                "bom": null,
                 "repository": null
               }
             ],
@@ -2578,7 +3027,7 @@
             "artifactId": "spring-cloud-services-starter-config-client",
             "scope": "compile",
             "description": "Config client on Pivotal Cloud Foundry.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud-services",
             "starter": false,
             "links": [
@@ -2595,7 +3044,7 @@
             "artifactId": "spring-cloud-services-starter-service-registry",
             "scope": "compile",
             "description": "Eureka service discovery client on Pivotal Cloud Foundry.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud-services",
             "starter": true,
             "links": [
@@ -2612,7 +3061,7 @@
             "artifactId": "spring-cloud-services-starter-circuit-breaker",
             "scope": "compile",
             "description": "Hystrix circuit breaker client on Pivotal Cloud Foundry.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud-services",
             "starter": true,
             "links": [
@@ -2634,7 +3083,7 @@
             "artifactId": "spring-cloud-starter-aws",
             "scope": "compile",
             "description": "AWS native services from Spring Cloud for AWS.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": false
           },
@@ -2645,7 +3094,7 @@
             "artifactId": "spring-cloud-starter-aws-jdbc",
             "scope": "compile",
             "description": "Relational databases on AWS with RDS and Spring Cloud AWS JDBC.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": false
           },
@@ -2656,7 +3105,7 @@
             "artifactId": "spring-cloud-starter-aws-messaging",
             "scope": "compile",
             "description": "Messaging on AWS with SQS and Spring Cloud AWS Messaging.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "spring-cloud",
             "starter": false
           }
@@ -2668,22 +3117,11 @@
           {
             "name": "Azure Support",
             "id": "azure-support",
-            "groupId": "com.azure.spring",
+            "groupId": "com.microsoft.azure",
             "artifactId": "azure-spring-boot-starter",
-            "mappings": [
-              {
-                "compatibilityRange": "[2.0.0.RELEASE,2.3.0.M1)",
-                "groupId": "com.microsoft.azure",
-                "artifactId": null,
-                "version": null,
-                "starter": null,
-                "bom": null,
-                "repository": null
-              }
-            ],
             "scope": "compile",
             "description": "Auto-configuration for Azure Services (Service Bus, Storage, Active Directory, Cosmos DB, Key Vault, and more).",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "azure",
             "starter": true,
             "links": [
@@ -2696,22 +3134,11 @@
           {
             "name": "Azure Active Directory",
             "id": "azure-active-directory",
-            "groupId": "com.azure.spring",
-            "artifactId": "azure-spring-boot-starter-active-directory",
-            "mappings": [
-              {
-                "compatibilityRange": "[2.0.0.RELEASE,2.3.0.M1)",
-                "groupId": "com.microsoft.azure",
-                "artifactId": "azure-active-directory-spring-boot-starter",
-                "version": null,
-                "starter": null,
-                "bom": null,
-                "repository": null
-              }
-            ],
+            "groupId": "com.microsoft.azure",
+            "artifactId": "azure-active-directory-spring-boot-starter",
             "scope": "compile",
             "description": "Spring Security integration with Azure Active Directory for authentication.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "azure",
             "starter": true,
             "links": [
@@ -2729,22 +3156,11 @@
           {
             "name": "Azure Key Vault",
             "id": "azure-keyvault-secrets",
-            "groupId": "com.azure.spring",
-            "artifactId": "azure-spring-boot-starter-keyvault-secrets",
-            "mappings": [
-              {
-                "compatibilityRange": "[2.0.0.RELEASE,2.3.0.M1)",
-                "groupId": "com.microsoft.azure",
-                "artifactId": "azure-keyvault-secrets-spring-boot-starter",
-                "version": null,
-                "starter": null,
-                "bom": null,
-                "repository": null
-              }
-            ],
+            "groupId": "com.microsoft.azure",
+            "artifactId": "azure-keyvault-secrets-spring-boot-starter",
             "scope": "compile",
             "description": "Manage application secrets and keys.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
             "bom": "azure",
             "starter": true,
             "links": [
@@ -2762,22 +3178,11 @@
           {
             "name": "Azure Storage",
             "id": "azure-storage",
-            "groupId": "com.azure.spring",
-            "artifactId": "azure-spring-boot-starter-storage",
-            "mappings": [
-              {
-                "compatibilityRange": "[2.0.0.RELEASE,2.3.0.M1)",
-                "groupId": "com.microsoft.azure",
-                "artifactId": "azure-storage-spring-boot-starter",
-                "version": null,
-                "starter": null,
-                "bom": null,
-                "repository": null
-              }
-            ],
+            "groupId": "com.microsoft.azure",
+            "artifactId": "azure-storage-spring-boot-starter",
             "scope": "compile",
             "description": "Azure Storage service integration.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.3.0.M1)",
             "bom": "azure",
             "starter": true,
             "links": [
@@ -2804,18 +3209,17 @@
             "artifactId": "spring-cloud-gcp-starter",
             "mappings": [
               {
-                "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+                "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
                 "groupId": "org.springframework.cloud",
                 "artifactId": null,
                 "version": null,
                 "starter": null,
-                "bom": "spring-cloud",
                 "repository": null
               }
             ],
             "scope": "compile",
             "description": "Contains auto-configuration support for every Spring Cloud GCP integration. Most of the auto-configuration code is only enabled if other dependencies are added to the classpath.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.5.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.5.0.M1)",
             "bom": "spring-cloud-gcp",
             "starter": true,
             "links": [
@@ -2837,18 +3241,17 @@
             "artifactId": "spring-cloud-gcp-starter-pubsub",
             "mappings": [
               {
-                "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+                "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
                 "groupId": "org.springframework.cloud",
                 "artifactId": null,
                 "version": null,
                 "starter": null,
-                "bom": "spring-cloud",
                 "repository": null
               }
             ],
             "scope": "compile",
             "description": "Adds the GCP Support entry and all the required dependencies so that the Google Cloud Pub/Sub integration work out of the box.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.5.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.5.0.M1)",
             "bom": "spring-cloud-gcp",
             "starter": true,
             "links": [
@@ -2870,18 +3273,17 @@
             "artifactId": "spring-cloud-gcp-starter-storage",
             "mappings": [
               {
-                "compatibilityRange": "[2.0.0.RELEASE,2.4.0-M1)",
+                "compatibilityRange": "[2.0.0.RELEASE,2.4.0.M1)",
                 "groupId": "org.springframework.cloud",
                 "artifactId": null,
                 "version": null,
                 "starter": null,
-                "bom": "spring-cloud",
                 "repository": null
               }
             ],
             "scope": "compile",
             "description": "Adds the GCP Support entry and all the required dependencies so that the Google Cloud Storage integration work out of the box.",
-            "compatibilityRange": "[2.0.0.RELEASE,2.5.0-M1)",
+            "compatibilityRange": "[2.0.0.RELEASE,2.5.0.M1)",
             "bom": "spring-cloud-gcp",
             "starter": true,
             "links": [
@@ -2891,78 +3293,8 @@
               },
               {
                 "rel": "guide",
-                "href": "https://github.com/GoogleCloudPlatform/spring-cloud-gcp/tree/master/spring-cloud-gcp-samples/spring-cloud-gcp-storage-resource-sample"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Alibaba",
-        "content": [
-          {
-            "name": "Nacos Configuration",
-            "id": "alibaba-nacos-config",
-            "groupId": "com.alibaba.cloud",
-            "artifactId": "spring-cloud-starter-alibaba-nacos-config",
-            "scope": "compile",
-            "description": "Support for externalized configuration in a distributed system, auto refresh when configuration changes.",
-            "compatibilityRange": "[2.2.0.RELEASE,2.3.0.M1)",
-            "bom": "spring-cloud-alibaba",
-            "starter": false,
-            "links": [
-              {
-                "rel": "reference",
-                "href": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html#_spring_cloud_alibaba_nacos_config"
-              },
-              {
-                "rel": "guide",
-                "href": "https://github.com/alibaba/spring-cloud-alibaba/tree/master/spring-cloud-alibaba-examples/nacos-example/nacos-config-example",
-                "description": "Nacos Configuration Example"
-              }
-            ]
-          },
-          {
-            "name": "Nacos Service Discovery",
-            "id": "alibaba-nacos-discovery",
-            "groupId": "com.alibaba.cloud",
-            "artifactId": "spring-cloud-starter-alibaba-nacos-discovery",
-            "scope": "compile",
-            "description": "Service discovery with Alibaba Nacos.",
-            "compatibilityRange": "[2.2.0.RELEASE,2.3.0.M1)",
-            "bom": "spring-cloud-alibaba",
-            "starter": true,
-            "links": [
-              {
-                "rel": "reference",
-                "href": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html#_spring_cloud_alibaba_nacos_discovery"
-              },
-              {
-                "rel": "guide",
-                "href": "https://github.com/alibaba/spring-cloud-alibaba/blob/master/spring-cloud-alibaba-examples/nacos-example/nacos-discovery-example/readme.md",
-                "description": "Nacos Service Discovery Example"
-              }
-            ]
-          },
-          {
-            "name": "Sentinel",
-            "id": "alibaba-sentinel",
-            "groupId": "com.alibaba.cloud",
-            "artifactId": "spring-cloud-starter-alibaba-sentinel",
-            "scope": "compile",
-            "description": "Flow control and circuit breaking with Alibaba Sentinel.",
-            "compatibilityRange": "[2.2.0.RELEASE,2.3.0.M1)",
-            "bom": "spring-cloud-alibaba",
-            "starter": false,
-            "links": [
-              {
-                "rel": "reference",
-                "href": "https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/en-us/index.html#_spring_cloud_alibaba_sentinel"
-              },
-              {
-                "rel": "guide",
-                "href": "https://github.com/alibaba/spring-cloud-alibaba/tree/master/spring-cloud-alibaba-examples/sentinel-example/sentinel-core-example",
-                "description": "Sentinel Example"
+                "href": "https://github.com/GoogleCloudPlatform/spring-cloud-gcp/tree/master/spring-cloud-gcp-samples/spring-cloud-gcp-storage-resource-sample",
+                "description": "GCP Storage Sample"
               }
             ]
           }
