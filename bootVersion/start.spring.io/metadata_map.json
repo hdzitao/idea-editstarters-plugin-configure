@@ -1,5 +1,10 @@
 [
   {
+    "versionRange": "2.3.0",
+    "metadataConfig": "2.3.0",
+    "enable": true
+  },
+  {
     "versionRange": "[2.2.2,2.2.x]",
     "metadataConfig": "2.2.2",
     "enable": true
